@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+body {
+	font-family: 'Patrick Hand', cursive;
+}
+
+figcaption{
+	width: 60%;
+}
+
+/*Header*/
+
+header {
+	background-color: plum;
+	height: 100vh;
+	padding-top: 150px;
+}
+
+.hamb .fa-bars, .hamb .fa-window-close {
+	display: none;
+}
+
+nav {
+	background-color: rgba(221, 160, 221, 0.6);
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+	color: rgba(235, 227, 227, 0.81);
+}
+
+nav ul {
+	display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+	margin: auto 10px;
+}
+
+nav ul li a {
+	padding: 10px;
+}
+
+nav ul li a:hover, .hamb .fa-bars:hover {
+	color: black;
+}
+
+.hamb .fa-window-close:hover {
+	color: red;
+}
+
+.home {
+	float: left;
+	padding-left: 20px;
+	font-size: 30px;
+}
+
+.home:hover {
+	color: black;
+}
+
+header img {
+	display: block;
+    margin: 50px auto;
+    border-radius: 50%;
+    height: 30vh;
+}
+
+h1 {  
+	text-align: center;
+    font-size: 80px;
+    color: white;
+} 
+
+header h2 {
+	text-align: center;
+    color: white;
+    letter-spacing: 5px;
+}
+
+/*MAIN*/
+
+main section {
+	padding: 90px 0;
+}
+
+main section h2 {
+	text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#une h2, #trois h2, #deux h2 {
+    color: #2c3e50;
+}
+
+#une div {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+	/* background-color: plum; */
+}
+
+#une div a {
+	width: 400px;
+}
+
+#une div img {
+	width: 100%;
+    margin: 10px auto;
+}
+
+#deux {
+	/* background-color: plum; */
+	color: #000;
+}
+
+#deux div {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#deux div article {
+	/* background-color: rgba(130, 207, 238, 0.2); */
+	width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+#deux h3 {
+	text-align: center;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+#deux a {
+	color: black;
+	display: block;
+    margin: 30px auto;
+    border: 1px solid white;
+    width: 10%;
+    padding: 10px;
+    text-align: center;
+}
+
+#deux a:hover {
+	background-color: white;
+	color: #2c3e50;
+	border-color: #2c3e50;
+	border-style: dashed;
+}
+
+#deux a i {
+	margin: 10px 5px;
+}
+#trois form a{
+	color: #fff;
+}
+
+#trois form {
+	color: #2c3e50;
+	display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+}
+
+#trois form aside {
+	width: 50%;
+	margin: auto;
+}
+
+#trois form aside label {
+	display: block;
+	text-align: left;
+	font-size: 20px;
+}
+
+#trois form input, #trois form textarea {
+	display: block;
+	width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px dashed #2c3e50;
+}
+
+#trois form input {
+	height: 30px;
+
+}
+
+#trois form textarea {
+	height: 100px;
+}
+
+#trois form button {
+    color: black;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 20px;
+    width: 125px;
+	border: 1px dashed #2c3e50;
+}
+
+
+/*FOOTER*/
+
+footer {
+	padding-top: 50px;
+	background-color: plum;
+	color: white;
+	text-align: center;
+}
+
+footer h4 {
+	font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+	color: white;
+}
+
+footer ul li a:hover {
+	color: #1a252f;
+}
+
+footer i {
+	font-size: 200%;
+}
+
+
+@media screen and (max-width: 720px) {
+
+	nav ul {
+		display: none;
+		padding-top: 20px;
+	}
+
+	nav ul li {
+		text-align: right;
+	}
+
+	.hamb {
+		display: flex;
+	    justify-content: flex-end;
+	    padding-right: 20px;
+	}
+
+	.hamb .fa-bars {
+		display: block;
+	}
+
+}
+
+

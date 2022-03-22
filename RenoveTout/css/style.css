@@ -1,0 +1,245 @@
+/*
+Armelle HENRY - JANVIER 2022
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sedgwick+Ave&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: green;
+    text-align: center;
+}
+
+h2, h3,h4{
+    color: green;
+    text-align: center;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+ul li{
+    list-style: none;
+    font-family: 'Sedgwick Ave', cursive; 
+}
+
+p{
+    font-family: 'Roboto';
+}
+/*
+-----HEADER----------
+*/
+header{
+    background: linear-gradient(#2bed11d7,#40b530c8);
+    height: 10vh;
+    padding: 1vh;
+}
+
+.sticky{
+    position: sticky;
+    top: 1px;
+}
+/*
+------Navigation--------
+*/
+header nav{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+nav li, a{
+    color:rgba(0, 0, 0, 0.666); 
+    margin: 5px 5px;
+}
+
+nav ul li span{
+    display: none;
+}
+
+nav ul li img:hover + span{
+    display: inline-block;
+}
+/*
+*******VIDEO*********
+*/
+
+.video{
+    display: flex;
+    justify-content: center;
+    border: solid green 2px;
+    padding: 5vh 1vw;
+    background-color: rgba(0, 128, 0, 0.797);
+}
+
+iframe{
+    border-radius: 2%;
+}
+
+div p{
+    text-shadow: rgba(0, 0, 0, 0.783);  
+}
+.comments p{
+    font-style: italic;
+    font-size: 1rem;
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+@keyframes slidein{
+    from{
+        width: 30%;
+        opacity: 0.2;
+    }
+    25%{
+        width: 50%;
+        opacity:0.4;
+        width:100%;
+    }
+
+    50%{
+        width: 80%;
+        opacity:0.6;
+        width:100%;
+    }
+    to{
+        width: 100%;
+        left: 0%;
+        opacity: 1;
+    } 
+}
+
+.comments{
+    border: solid green 2px;
+    box-shadow: 5px 5px 10px green;
+    padding: 0 2vw 2vh 2vw ;
+    margin: 3vh 5vw;
+    position: relative; 
+    min-height: 40vh;    
+}
+
+#ambition{
+    border: solid green 2px;
+    box-shadow: 5px 5px 10px green;
+    padding: 0 2vw 2vh 2vw ;
+    margin: 3vh 5vw;
+}
+
+#compétences{
+    border: solid green 2px;
+    box-shadow: 5px 5px 10px green;
+    padding: 0 2vw 2vh 2vw ;
+    margin: 3vh 5vw;
+}
+
+#contact{
+    border: solid green 2px;
+    box-shadow: 5px 5px 10px green;
+    padding: 0 2vw 2vh 2vw ;
+    margin: 3vh 5vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*
+********DIV IMG*************
+*/
+
+.bloc_img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+figure{
+    background: linear-gradient(#2bed11ba,#40b530b6); 
+    border-radius: 3%; 
+    border: green solid 2px;
+    border-radius: 2%;
+}
+
+figcaption{
+    font-style: oblique;
+    text-align: center;
+    font-family: 'Sedgwick Ave', cursive; 
+}
+/*
+*********DERNIERE DIV***************
+*/
+.except{
+    width: 100%;
+}
+
+table{
+    margin: 3vh 0 0 0;
+    font-family: 'Roboto';
+}
+
+form{
+    margin: 3vh 0 0 0;
+    font-family: 'Roboto';
+}
+
+form input::placeholder{
+    font-family: 'Roboto';
+}
+form textarea{
+    font-family: 'Roboto';
+}
+
+fieldset{
+    background: linear-gradient(#2bed119f,#40b530b6); 
+    border-radius: 5%;
+    box-shadow: green 2px 2px 5px;
+    border: green;
+    padding: 10px 10px;
+}
+
+label,input{
+    padding: 1px 1px;
+    margin: 2px 1px;
+}
+
+.logo > img{
+    margin:0px 0px 40px 0px;
+}
+/*
+********FOOTER-******************
+*/
+footer{
+    background: linear-gradient(#2bed11ba,#40b530b6);
+    height: 10vh;
+    font-family: 'Sedgwick Ave', cursive; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*
+************RESPONSIVE********
+*/
+
+@media screen and (max-width:822px){
+    header{
+        height: 100px;
+    }
+}
+
+
+@media screen and (max-width:410px){
+    header{
+        height: 100px;
+    }
+    nav ul li img{
+        display: none;
+    }
+}

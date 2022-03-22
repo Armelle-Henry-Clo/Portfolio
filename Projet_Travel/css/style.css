@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2? family= Permanent+Marker & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Caveat & display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.15em;
+    background:linear-gradient(rgba(19, 180, 216, 0.886),rgba(28, 74, 225, 0.632));
+}
+
+h6{
+    font-family: 'Permanent Marker', cursive;
+    
+}
+
+a{
+    text-decoration: none;
+}
+footer{
+    margin: 2vh 0;
+    border:solid 1px rgba(0, 0, 0, 0.584);
+}
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+    animation-name: bounce;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+@keyframes bounce {
+    from{
+        margin-top: 0%;
+    }
+    to{
+        margin-top: 10%;
+        font-size: 1.5em;
+    }  
+}
+/*
+**********page_2*********
+*/
+form{
+    display: flex;
+    justify-content: center;
+    margin: 5vh;
+    
+}
+
+fieldset{
+    border:solid #fff 5px;
+    width: 100%;
+}
+/*
+************page_3***********
+*/
+
+iframe{
+    padding: 10px;
+    margin: 10px;
+    border: solid 2px #fff;
+    background-color: rgba(255, 255, 255, 0.872);
+}
+

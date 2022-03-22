@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,400&display=swap');
+
+html,body{
+    margin:0 auto;
+    padding: 0 auto;
+    font-family: 'Roboto Condendes';
+    height: 100%;
+    width: 100%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#wrapper{
+    background-image: url("https://img.freepik.com/photos-gratuite/photo-creation-plat-du-bureau-espace-travail_7861-978.jpg?t=st=1646382351~exp=1646382951~hmac=f96d048f9d4dab86dc9c232e146c9fade19a293f76b4ec14d7562d7c024e8fa8&w=996");
+    background-repeat: no-repeat ;
+    background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    
+}
+
+header{
+    grid-column: 1 / 4;
+    grid-row: 1;
+    border-radius: 20px;
+    background-color: rgba(0, 128, 0, 0.15);
+    border: solid 2px green;
+
+}
+
+aside{
+    background-color: rgba(0, 0, 255, 0.2);
+    border: solid 2px blue;
+    border-radius: 20px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 7;
+}
+
+footer{
+    background-color: rgba(0, 128, 0, 0.15);
+    border: solid 2px green;
+    border-radius: 20px;
+    grid-column: 1 / 5;
+    grid-row: 7/7;
+}
+
+section{
+    background-color: rgba(213, 130, 238, 0.2);
+    border: solid 2px rgb(213, 130, 238);
+    border-radius: 20px;
+    grid-column: 2 / 3 ;
+    grid-row:2 / 4;
+}
+
+.section{
+    background-color: rgba(213, 130, 238, 0.2);
+    border: solid 2px rgb(213, 130, 238);
+    border-radius: 20px;
+    grid-column: 2/ 4 ;
+    grid-row: 4 / 7;
+}
+
+article{
+    background-color: rgba(130, 207, 238, 0.2);
+    border: solid 2px rgb(130, 207, 238);
+    border-radius: 20px;
+    grid-column:4/ 5;
+    grid-row: 4 / 7;
+}
+
+.CV{
+    background-color: rgba(130, 207, 238, 0.2);
+    border: solid 2px rgb(130, 207, 238);
+    border-radius: 20px;
+    grid-column: 3/4;
+    grid-row: 2 / 4;
+}
+
+span{
+    font-style: italic;
+}
+
+
