@@ -12,6 +12,10 @@ a{
     text-decoration: none;
 }
 
+ul li{
+    list-style: none;
+}
+
 #wrapper{
     background-image: url("https://img.freepik.com/photos-gratuite/photo-creation-plat-du-bureau-espace-travail_7861-978.jpg?t=st=1646382351~exp=1646382951~hmac=f96d048f9d4dab86dc9c232e146c9fade19a293f76b4ec14d7562d7c024e8fa8&w=996");
     background-repeat: no-repeat ;
@@ -53,7 +57,7 @@ section{
     border: solid 2px rgb(213, 130, 238);
     border-radius: 20px;
     grid-column: 2 / 3 ;
-    grid-row:2 / 4;
+    grid-row:2 / 5;
 }
 
 .section{
@@ -61,7 +65,7 @@ section{
     border: solid 2px rgb(213, 130, 238);
     border-radius: 20px;
     grid-column: 2/ 4 ;
-    grid-row: 4 / 7;
+    grid-row: 5 / 7;
 }
 
 article{
@@ -69,7 +73,7 @@ article{
     border: solid 2px rgb(130, 207, 238);
     border-radius: 20px;
     grid-column:4/ 5;
-    grid-row: 4 / 7;
+    grid-row: 3 / 7;
 }
 
 .CV{
@@ -77,7 +81,8 @@ article{
     border: solid 2px rgb(130, 207, 238);
     border-radius: 20px;
     grid-column: 3/4;
-    grid-row: 2 / 4;
+    grid-row: 2 / 5;
+    
 }
 
 span{

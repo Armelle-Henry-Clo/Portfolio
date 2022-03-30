@@ -18,7 +18,7 @@ figcaption{
 /*Header*/
 
 header {
-	background-color: plum;
+	background-color: rgba(137, 43, 226, 0.5);
 	height: 100vh;
 	padding-top: 150px;
 }
@@ -28,7 +28,7 @@ header {
 }
 
 nav {
-	background-color: rgba(221, 160, 221, 0.6);
+	background-color: rgba(137, 43, 226, 0.4);
     padding: 20px 0;
     text-transform: uppercase;
     font-size: 20px;
@@ -56,11 +56,11 @@ nav ul li a {
 }
 
 nav ul li a:hover, .hamb .fa-bars:hover {
-	color: black;
+	color: grey;
 }
 
 .hamb .fa-window-close:hover {
-	color: red;
+	color: rgb(243, 247, 20);
 }
 
 .home {
@@ -70,7 +70,7 @@ nav ul li a:hover, .hamb .fa-bars:hover {
 }
 
 .home:hover {
-	color: black;
+	color: #fff;
 }
 
 header img {
@@ -96,6 +96,8 @@ header h2 {
 
 main section {
 	padding: 90px 0;
+	background-color: rgba(255, 166, 0, 0.5);
+	/* background-color: rgba(128, 128, 128, 0.25); */
 }
 
 main section h2 {
@@ -108,25 +110,36 @@ main section h2 {
     color: #2c3e50;
 }
 
+#une h2{
+	margin-bottom: 50px;
+
+}
+
 #une div {
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 50px;
-	/* background-color: plum; */
+    flex-wrap: nowrap;
+    justify-content: justify;
+    padding: 5px auto;
+	margin: 5px 5px;
 }
 
 #une div a {
 	width: 400px;
+	color: blueviolet;
 }
 
 #une div img {
 	width: 100%;
-    margin: 10px auto;
+    padding: 10px auto;
+	border-radius: 5px;
+}
+
+#une div figcaption{
+	margin: 10px 5px;
 }
 
 #deux {
-	/* background-color: plum; */
+	background-color: rgba(137, 43, 226, 0.45); 
 	color: #000;
 }
 
@@ -138,9 +151,9 @@ main section h2 {
 }
 
 #deux div article {
-	/* background-color: rgba(130, 207, 238, 0.2); */
+	border: 1px double grey;
 	width: 300px;
-    padding: 10px;
+    padding: 20px;
     margin: 10px 0;
     font-size: 20px;
 }
@@ -155,7 +168,7 @@ main section h2 {
 	color: black;
 	display: block;
     margin: 30px auto;
-    border: 1px solid white;
+    border: 1px dashed grey;
     width: 10%;
     padding: 10px;
     text-align: center;
@@ -229,7 +242,7 @@ main section h2 {
 
 footer {
 	padding-top: 50px;
-	background-color: plum;
+	background-color: rgba(137, 43, 226, 0.5); 
 	color: white;
 	text-align: center;
 }
@@ -237,6 +250,11 @@ footer {
 footer h4 {
 	font-size: 20px;
     margin-bottom: 10px;
+}
+
+footer ul {
+	display: flex;
+    justify-content: space-around;
 }
 
 footer ul li a {

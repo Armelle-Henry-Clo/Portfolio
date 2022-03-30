@@ -35,7 +35,7 @@ $mail = filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL);
 
 $monmail = 'clotildearmelle@gmail.com';
 $message = $_POST['name'] . $_POST['tel'] . $_POST['mail'] . $_POST['message'] . $_SESSION['date'];
-mail($monmail,'Contact',$message);
+mail($monmail,'Port-folio contact',$message);
 
 file_put_contents('contact.text', $_POST, FILE_APPEND);
 
@@ -53,25 +53,25 @@ endif; ?>
 			<section id="une">
 				<h2>Portfolio</h2>
 				<div> 
-                    <a target="_blank" href="https://monparcoursformation.alwaysdata.net/"><img src="img/projetFormation.png" ></a><figcaption>Travail en équipe de 5 personnes :  développer en une semaine un site dynamique en PHP from scratch de plusieurs pages, avec différents niveaux de connexion et d'interaction sur le site<br>(Télécharger le powerpoint <a href="MON PARCOURS FORMATION.pptx">ici</a>)</figcaption>
+                    <a target="_blank" href="https://monparcoursformation.alwaysdata.net/"><img src="img/projetFormation.png" alt="Mon parcours formation"></a><figcaption>Travail en équipe de 5 personnes :  développer en une semaine un site dynamique en PHP from scratch de plusieurs pages, avec différents niveaux de connexion et d'interaction sur le site<br>(Télécharger le powerpoint <a href="MON PARCOURS FORMATION.pptx">ici</a>)</figcaption>
 				
-                    <a target="_blank" href="https://armelle-henry-clo.github.io/projet_BP/" ><img src="img/blackPink.png" ></a><figcaption>Travail individuel : développer en une semaine from scratch un site responsive one page avec les technologies- HTML/CSS/JS.<br> Une V2 de ce site a été faite. Il s'agissait de faire évoluer un site statique en un site dynamique avec BDD et de le mettre en production. <br> Pour voir cette version, cliquez <a target="_blank" href="https://fanbasebp.000webhostapp.com/">ici</a></figcaption>
+                    <a target="_blank" href="https://armelle-henry-clo.github.io/projet_BP/" ><img src="img/blackPink.png" alt="Black Pink v.1" ></a><figcaption>Travail individuel : développer en une semaine from scratch un site responsive one page avec les technologies- HTML/CSS/JS.<br> Une V2 de ce site a été faite. Il s'agissait de faire évoluer un site statique en un site dynamique avec BDD et de le mettre en production. <br> Pour voir cette version, cliquez <a target="_blank" href="http://fanblackpink.fr/">ici</a></figcaption>
 				</div>
 
 				<div>
-                    <a target="_blank" href="RenoveTout/index.php"><img src="img/RenoveTout.png"></a><figcaption>Travail individuel: Développer from scratch un site responsive one page pour un client à partir d'une maquette <br> langages utilisés HTML et CSS </figcaption>
-				</div>
+                    <a target="_blank" href="RenoveTout/index.php"><img src="img/RenoveTout.png" alt="site autoentrepreneur"></a><figcaption>Travail individuel: Développer from scratch un site responsive one page pour un client à partir d'une maquette <br> langages utilisés HTML et CSS </figcaption>
+				<!-- </div>
 
-				<div>
+				<div> -->
                     <a target="_blank" href="Projet_Travel/index_p1.php"><img src="img/travel.png" alt="image site de voyage"></a>
 					<figcaption>Travail individuel libre : from scratch, intégrer un site responsive avec maillage interne. <br> langages : HTML/CSS/Bootstrap</figcaption>
                 </div>
               
                 <div>
-                    <a href="img/ArtisteImaginaire.png"><img src="img/vinyl.png"></a><figcaption>Travail individuel : Créer une pochette d'album vynil pour l'artiste de son choix <br> utilisation Adobe Photoshop</figcaption>
-				</div>
-				<div>
-					<a href="img/ChanteurImaginaire.png"><img src="img/single.png"></a><figcaption>Travail individuel : Créer une pochette cd pour l'artiste de son choix<br> utilisation Adobe Photoshop</figcaption>
+                    <a href="img/ArtisteImaginaire.png"><img src="img/vinyl.png" alt="pochette vynil"></a><figcaption>Travail individuel : Créer une pochette d'album vynil pour l'artiste de son choix <br> utilisation Adobe Photoshop</figcaption>
+				<!-- </div>
+				<div> -->
+					<a href="img/ChanteurImaginaire.png"><img src="img/single.png" alt="pochette cd"></a><figcaption>Travail individuel : Créer une pochette cd pour l'artiste de son choix<br> utilisation Adobe Photoshop</figcaption>
                 </div>                 				
 			</section>
 			
@@ -81,7 +81,7 @@ endif; ?>
 					<article>
 						<h3>Formation</h3><br>						
 						<p>J'ai repris des études en développement web l'année dernière à mon rythme, d'abord sur internet avec OpenClassRooms. Ensuite, j'ai eu l'occasion de participer à un atelier avec Social Builder/Horizon Numérique ce qui m'a ouvert la porte vers une formation certifiante chez DORANCO en tant que développeuse web. Cette formation intensive m'a très rapidement permis d'être opérationnelle et de travailler en agilité sur plusieurs projets. </p>
-						Aujourd'hui ma formation n'est pas terminée, je souhaiterais me spécialiser dans le back, en apprenant un langage de programmation comme Python ou Java, tout dépendra du nouveau projet qui s'offrirait à moi.
+						Aujourd'hui je considère que ma formation n'est pas terminée et je souhaiterais me spécialiser dans le back.
 					</article>
 					<article>
 						<h3>Expérience</h3><br>
@@ -122,7 +122,7 @@ endif; ?>
 					<ul>
 						<li><a href="https://github.com/Armelle-Henry-Clo"><i class="fab fa-github"></i></a></li>
 						<li><a href="https://www.linkedin.com/in/armelle-henry/"><i class="fab fa-linkedin"></i></a></li>
-						<li><a href="Mailto:clotildearmelle@gmail.com"><i class="fas fa-envelope"></i></a></li>
+						<li><a href="Mailto:contact@armelle-henry.fr"><i class="fas fa-envelope"></i></a></li>
                         <li><a href="https://discord.com/channels/@me"><i class="fab fa-discord"></i></a></li>
 					</ul><br>
 				<p>Copyright &copy; Armelle HENRY - CLO81</p>
